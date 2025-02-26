@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Vamos aprender como fazer imagens se  adaptarem sozinhas</h1>
+    <picture>
+        <!-- Bom eu pra simplificar o source media da um "limite" pra tela. Tipo o tamanho max sendo 1000 ou  seja se for menor que 1000  carrega a imagem menor.-->
+        <source media="(max-width:750px )" srcset="ImgP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="ImgM.png" type="image/png">
+        <img src="ImgG.png" alt="Imagem Grande.">
+    </picture>
+    <p>Bom pra explicar é assim se você  tem uma imagem de 1000px e a tela é de 800px então usaremos o sourcemediatype pra dar um tamanho max ou min ai a gente pode trocar a imagem sem fazer nada./p>
+</body>
+</html>
